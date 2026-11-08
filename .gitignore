@@ -1,0 +1,97 @@
+# ============================================================
+# .gitignore — Agentic Vietnamese Accounting & Reconciliation
+# ============================================================
+
+# --- Byte-compiled / optimized / DLL files ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# --- C extensions & build artifacts ---
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- IDE & Editors ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# --- OS Generated Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- Large Model Checkpoints & Pretrained Weights (>100MB) ---
+# GitHub has a strict 100MB file limit. Run `python setup_checkpoints.py`
+# to automatically download these weights locally.
+*.pth
+*.pt
+*.safetensors
+*.bin
+*.onnx
+weights/phobert-base-v2/model.safetensors
+weights/phobert-base-v2/pytorch_model.bin
+weights/phobert-base-v2/bpe.codes
+weights/ocr/*.pth
+weights/w2ner/*.pt
+weights/w2ner/*.pth
+
+# Preserve weights folder structure
+!weights/**/.gitkeep
+!weights/ocr/*.yml
+!weights/phobert-base-v2/*.json
+!weights/phobert-base-v2/vocab.txt
+
+# --- SQLite Databases & Data Files ---
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+database/*.db-journal
+database/*.db-wal
+database/*.db-shm
+!database/.gitkeep
+
+# --- Uploads & Exported Reports ---
+uploads/*
+!uploads/.gitkeep
+!uploads/*.sample.*
+
+# --- Logs & Temp Files ---
+*.log
+logs/
+temp/
+tmp/
+=

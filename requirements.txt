@@ -1,0 +1,45 @@
+# ============================================================
+# AGENTIC ACCOUNTING RECONCILIATION - DEPENDENCIES
+# Hệ thống Đối soát & Định khoản Kế toán Tự động (TT 200/133)
+# ============================================================
+
+# --- Core Web Framework ---
+streamlit>=1.35.0
+
+# --- Data Manipulation & Analysis ---
+pandas>=2.1.0
+numpy>=1.26.0
+openpyxl>=3.1.2          # Đọc/ghi file Excel (.xlsx)
+
+# --- Fuzzy Matching ---
+rapidfuzz>=3.6.1          # So khớp mờ tên công ty viết tắt, không dấu
+
+# --- Visualization ---
+plotly>=5.19.0            # Biểu đồ tương tác (dashboard)
+
+# --- Document Parsing ---
+lxml>=5.1.0               # Parse XML hóa đơn điện tử
+pdfplumber>=0.10.3        # Đọc PDF hóa đơn (trích xuất bảng, text)
+
+# --- OCR & Computer Vision ---
+pillow>=10.2.0            # Xử lý ảnh hóa đơn trước khi OCR
+vietocr>=0.3.12           # Nhận diện chữ tiếng Việt VGG-Transformer
+# paddleocr>=2.7.3        # Phát hiện vùng văn bản PP-OCRv4 (tùy chọn)
+
+# --- Utilities & Checkpoints Setup ---
+requests>=2.31.0
+tqdm>=4.66.0              # Thanh tiến trình tải checkpoints
+
+# --- LLM / VLM Integration ---
+ollama>=0.1.8             # Client giao tiếp Ollama local server
+
+# --- Deep Learning & Transformers ---
+torch>=2.2.0              # PyTorch backend
+transformers>=4.39.0      # HuggingFace Transformers (PhoBERT)
+
+# --- Vietnamese NLP ---
+underthesea>=6.8.0        # Tách từ, NER tiếng Việt
+# pyvi>=0.1.1             # Fallback nếu underthesea không cài được
+
+# --- Data Validation ---
+pydantic>=2.6.0           # Schema validation cho cấu trúc dữ liệu Agent
